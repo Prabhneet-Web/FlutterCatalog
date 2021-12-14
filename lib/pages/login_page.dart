@@ -13,14 +13,17 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
 
   moveToHome(BuildContext context) async {
-    setState(() {
-      changedButton = true;
-    });
-    await Future.delayed(const Duration(seconds: 1));
-    await Navigator.pushNamed(context, MyRoutes.homeRoute);
-    setState(() {
-      changedButton = false;
-    });
+    if (_formKey.currentState!.validate()) {
+      setState(() {
+        changedButton = true;
+      });
+
+      await Future.delayed(const Duration(seconds: 1));
+      await Navigator.pushNamed(context, MyRoutes.homeRoute);
+      setState(() {
+        changedButton = false;
+      });
+    }
   }
 
   @override
@@ -57,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return "UserName cannot be empty";
+                    return "Username cannot be empty";
                   }
                   return null;
                 },
@@ -83,10 +86,6 @@ class _LoginPageState extends State<LoginPage> {
                   }
 
                   return null;
-                },
-                onChanged: (value) {
-                  name = value;
-                  setState(() {});
                 },
               ),
             ),
