@@ -17,8 +17,14 @@ class MyDrawer extends StatelessWidget {
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 margin: EdgeInsets.zero,
-                accountName: Text("Prabhneet"),
-                accountEmail: Text("imailcode@gmail.com"),
+                accountName: Text(
+                  "Prabhneet",
+                  style: TextStyle(color: Colors.black),
+                ),
+                accountEmail: Text(
+                  "imailcode@gmail.com",
+                  style: TextStyle(color: Colors.black),
+                ),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(imageUrl),
                 ),
@@ -27,39 +33,39 @@ class MyDrawer extends StatelessWidget {
             ListTile(
               leading: Icon(
                 CupertinoIcons.home,
-                color: Colors.white,
+                color: Colors.black,
               ),
               title: Text(
                 "Home",
                 textScaleFactor: 1.3,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
               ),
             ),
             ListTile(
               leading: Icon(
                 CupertinoIcons.profile_circled,
-                color: Colors.white,
+                color: Colors.black,
               ),
               title: Text(
                 "Profile",
                 textScaleFactor: 1.3,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
               ),
             ),
             ListTile(
               leading: Icon(
                 CupertinoIcons.mail,
-                color: Colors.white,
+                color: Colors.black,
               ),
               title: Text(
                 "Mail",
                 textScaleFactor: 1.3,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
               ),
             )

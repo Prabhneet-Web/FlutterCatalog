@@ -11,7 +11,11 @@ class HomePage extends StatelessWidget {
     const double pi = 3.14;
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Catalog App"),
+        title: const Center(
+          child: Text(
+            "Catalog App",
+          ),
+        ),
       ),
       body: Center(
         child: Container(
