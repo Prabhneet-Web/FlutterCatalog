@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../pages/login_page.dart';
 
 class MyDrawer extends StatelessWidget {
   @override
