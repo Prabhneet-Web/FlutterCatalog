@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "iPhone 12 Pro",
+            "desc": "Apple iPhone 12th Generation",
+            "price": 99000,
+            "color": "#33505a",
+            "image": "https://m.media-amazon.com/images/I/71umuN8XVeL.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Pixel 5",
+            "desc": "Google Pixel Phone 5th Generation",
+            "price": 31000,
+            "color": "#00ac51",
+            "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-53930/googlepixel5.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Macbook M1 Air",
+            "desc": "Apple Macbook Air with M1 Chip",
+            "price": 90000,
+            "color": "e0bfae",
+            "image": "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_SL1500_.jpg"
+        },
+        {
+            "id": 4,
+            "name": "PlayStation5",
+            "desc": "Sony PlayStation 5th Generation",
+            "price": 21000,
+            "color": "544ee4",
+            "image": "https://rukminim1.flixcart.com/image/416/416/kj7gwi80/gamingconsole/t/v/v/cfi-1008a01r-825-sony-no-original-imafytxe7twjskbx.jpeg?q=70"
+        },
+        {
+            "id": 5,
+            "name": "Airpods Pro",
+            "desc": "Apple Airpods Pro 1st Generation",
+            "price": 11000,
+            "color": "#e3e4e9",
+            "image": "https://static.bhphotovideo.com/explora/sites/default/files/05-apple-airpods-pro-with-wireless-charging-case.png"
+        },
+        {
+            "id": 6,
+            "name": "iPad Pro",
+            "desc": "Apple iPad Pro 2020 edition",
+            "price": 49000,
+            "color": "f73984",
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617126635000"
+        },
+        {
+            "id": 7,
+            "name": "Galaxy S21 Ultra",
+            "desc": "Samsung Galaxy S21 Ultra 2021 Edition",
+            "price": 21000,
+            "color": "1c1c1c",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/galaxy-s21/gallery/uk-galaxy-s21-ultra-5g-g988-sm-g998bzsdeua-368888034?$720_576_PNG$    "
+        },
+        {
+            "id": 8,
+            "name": "Galaxy S21",
+            "desc": "Samsung Galaxy S21 2021 Edition",
+            "price": 11000,
+            "color": "7c95eb",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/galaxy-s21/gallery/uk-galaxy-s21-5g-g991-sm-g991bzvdeua-368855939?$720_576_PNG$"
+        }
+    ]
+}

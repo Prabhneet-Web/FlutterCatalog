@@ -20,7 +20,7 @@ class ItemWidget extends StatelessWidget {
             duration: const Duration(seconds: 4),
           );
         },
-        leading: Image.network(item.image),
+        leading: SizedBox(width: 80, child: Image.network(item.image)),
         title: Text(item.name),
         subtitle: Text(item.desc),
         trailing: Text(
