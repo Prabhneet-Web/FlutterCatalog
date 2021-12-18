@@ -22,7 +22,7 @@ class ItemWidget extends StatelessWidget {
         },
         leading: SizedBox(width: 80, child: Image.network(item.image)),
         title: Text(item.name),
-        subtitle: Text(item.desc),
+        subtitle: Text(item.desc),  
         trailing: Text(
           "₹ ${item.price.toString()}",
           textScaleFactor: 1.1,
