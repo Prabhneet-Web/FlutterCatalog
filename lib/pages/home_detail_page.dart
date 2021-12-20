@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_catalog/models/catalog.dart';
@@ -13,7 +12,7 @@ class homeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(backgroundColor: Colors.transparent),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: Container(
         color: Colors.white,
@@ -60,6 +59,9 @@ class homeDetailPage extends StatelessWidget {
                         .lg
                         .make(),
                     10.heightBox,
+                    catalog.fullDesc.text
+                        .textStyle(context.captionStyle!)
+                        .make().p16(),
                   ],
                 ).py20(),
               ),
