@@ -27,9 +27,9 @@ class homeDetailPage extends StatelessWidget {
                     MyTheme.darkBluishColor,
                   ),
                   shape: MaterialStateProperty.all(const StadiumBorder())),
-              onPressed: () {},
-              child: "Buy".text.medium.heightTight.make(),
-            ).wh(80, 40),
+              onPressed: () {}, 
+              child: "Add to Cart".text.medium.heightTight.make(),
+            ).wh(120, 40),
           ],
         ).p32(),
       ),
@@ -47,7 +47,7 @@ class homeDetailPage extends StatelessWidget {
               height: 30,
               arcType: VxArcType.CONVEY,
               edge: VxEdge.TOP,
-              child: Container(
+              child: SizedBox(
                 width: context.screenWidth,
                 child: Column(
                   children: [
@@ -61,7 +61,8 @@ class homeDetailPage extends StatelessWidget {
                     10.heightBox,
                     catalog.fullDesc.text
                         .textStyle(context.captionStyle!)
-                        .make().p16(),
+                        .make()
+                        .p16(),
                   ],
                 ).py20(),
               ),
