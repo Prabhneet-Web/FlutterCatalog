@@ -38,9 +38,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black,
+        backgroundColor: context.theme.buttonColor,
         onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
         child: const Icon(CupertinoIcons.cart),
       ),
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                 const CircularProgressIndicator().centered().py16().expand(),
             ],
           ),
-        ),
+        ),  
       ),
     );
   }
