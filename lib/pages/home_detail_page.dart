@@ -13,9 +13,9 @@ class homeDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.transparent),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           buttonPadding: EdgeInsets.zero,
           alignment: MainAxisAlignment.spaceBetween,
@@ -24,14 +24,14 @@ class homeDetailPage extends StatelessWidget {
             ElevatedButton(
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
-                    MyTheme.darkBluishColor,
+                    context.theme.buttonColor,
                   ),
                   shape: MaterialStateProperty.all(const StadiumBorder())),
-              onPressed: () {}, 
+              onPressed: () {},
               child: "Add to Cart".text.medium.heightTight.make(),
             ).wh(120, 40),
           ],
-        ).p32(),
+        ).p16(),
       ),
       body: SafeArea(
         bottom: false,
@@ -44,15 +44,16 @@ class homeDetailPage extends StatelessWidget {
             const Divider(),
             Expanded(
                 child: VxArc(
-              height: 30,
+              height: 30.0,
               arcType: VxArcType.CONVEY,
               edge: VxEdge.TOP,
-              child: SizedBox(
+              child: Container(
+                color: context.cardColor,
                 width: context.screenWidth,
                 child: Column(
                   children: [
                     catalog.name.text.xl4.bold
-                        .color(MyTheme.darkBluishColor)
+                        .color(context.accentColor)
                         .make(),
                     catalog.desc.text
                         .textStyle(context.captionStyle!)
@@ -64,7 +65,7 @@ class homeDetailPage extends StatelessWidget {
                         .make()
                         .p16(),
                   ],
-                ).py20(),
+                ).py64(),
               ),
             ))
           ],

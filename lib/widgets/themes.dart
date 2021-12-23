@@ -29,7 +29,7 @@ class MyTheme {
         appBarTheme: AppBarTheme(
           color: Colors.black,
           elevation: 0.0,
-          iconTheme: const IconThemeData(color: Colors.black),
+          iconTheme: const IconThemeData(color: Colors.white),
           toolbarTextStyle: Theme.of(context).textTheme.bodyText2,
           titleTextStyle: Theme.of(context).textTheme.headline6,
         ),
@@ -37,6 +37,6 @@ class MyTheme {
 
   static Color creamColor = const Color(0xfff5f5f5);
   static Color darkBluishColor = const Color(0xff403b58);
-  static Color darkCreamColor = Vx.gray800;
-  static Color lightBluishColor = Vx.indigo600;
+  static Color darkCreamColor = Vx.gray900;
+  static Color lightBluishColor = Vx.indigo400;
 }
