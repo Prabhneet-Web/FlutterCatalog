@@ -4,7 +4,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter_catalog/models/catalog.dart';
 import 'package:flutter_catalog/utils/routes.dart';
-import 'package:flutter_catalog/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'home_widgets/catalog_header.dart';
@@ -42,7 +41,10 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: context.theme.buttonColor,
         onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
-        child: const Icon(CupertinoIcons.cart),
+        child: const Icon(
+          CupertinoIcons.cart,
+          color: Colors.white,
+        ),
       ),
       body: SafeArea(
         child: Container(
@@ -57,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                 const CircularProgressIndicator().centered().py16().expand(),
             ],
           ),
-        ),  
+        ),
       ),
     );
   }
