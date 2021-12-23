@@ -65,6 +65,13 @@ flutter:
     - lib/assets/images/login_image.png
     - lib/assets/files/catalog.json
     - lib/assets/images/Iphone12Pro.png
+    - lib/assets/images/googlePixel5.png
+    - lib/assets/images/macbookAir.png
+    - lib/assets/images/playstation5.png
+    - lib/assets/images/airpods.png
+    - lib/assets/images/ipadPro.png
+    - lib/assets/images/galaxyS21Ultra.png
+    - lib/assets/images/galaxyS21.png
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
