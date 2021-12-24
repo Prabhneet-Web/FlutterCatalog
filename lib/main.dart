@@ -3,7 +3,6 @@ import 'package:flutter_catalog/pages/cart_page.dart';
 import 'package:flutter_catalog/widgets/themes.dart';
 import './pages/login_page.dart';
 import './pages/home_page.dart';
-import 'package:google_fonts/google_fonts.dart';
 import './utils/routes.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
-      initialRoute: MyRoutes.homeRoute,
+      initialRoute: MyRoutes.cartRoute,
       routes: {
         "/": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => const HomePage(),
