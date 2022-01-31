@@ -34,7 +34,7 @@ class homeDetailPage extends StatelessWidget {
               tag: Key(catalog.id.toString()),
               child: Image.asset(catalog.image),
             ).h32(context).p20(),
-            const Divider(),
+            const SizedBox(),
             Expanded(
                 child: VxArc(
               height: 30.0,
